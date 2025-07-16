@@ -51,6 +51,9 @@ const HassanQuranInstitute = () => {
   };
 
   const handleSubmit = () => {
+    const encodedMessage = encodeURIComponent("Hello from my form!");
+    const whatsappURL = `https://wa.me/923294546498?text=${encodedMessage}`;
+    window.open(whatsappURL, "_blank");
     if (!formData.parentName || !formData.childName || !formData.email) {
       showNotification("Please fill in all required fields!");
       return;
@@ -424,7 +427,7 @@ const HassanQuranInstitute = () => {
                     </div>
                     <div className="text-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
                       <div className="text-3xl font-bold text-blue-600 animate-pulse">
-                        8+
+                        5+
                       </div>
                       <div className="text-sm text-gray-600 font-medium">
                         Years Experience
@@ -628,7 +631,10 @@ const HassanQuranInstitute = () => {
                   />
                 </div>
                 <div>
-                  <div className="block text-gray-700 font-semibold mb-2">
+                  <div
+                    className="block text-gray-700 font-semibold mb-2"
+                    href="https://wa.me/923294546498"
+                  >
                     WhatsApp Number
                   </div>
                   <input
@@ -658,6 +664,7 @@ const HassanQuranInstitute = () => {
 
               <button
                 onClick={handleSubmit}
+                href="https://wa.me/923294546498"
                 className="w-full bg-gradient-to-r from-emerald-600 via-green-500 to-blue-600 text-white py-4 rounded-xl font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1 group"
               >
                 <span className="flex items-center justify-center space-x-2">
@@ -744,11 +751,15 @@ const HassanQuranInstitute = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-5 h-5 text-emerald-400" />
-                  <span>quran@hassaninstitute.com</span>
+                  <span href="mailto:alihassanakram.dev@gmail.com">
+                    alihassanakram.dev@gmail.com
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MessageCircle className="w-5 h-5 text-emerald-400" />
-                  <span>Available on WhatsApp</span>
+                  <span href="https://wa.me/923294546498">
+                    Available on WhatsApp
+                  </span>
                 </div>
               </div>
             </div>
