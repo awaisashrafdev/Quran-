@@ -621,7 +621,7 @@ const HassanQuranInstitute = () => {
                     name="childName"
                     value={formData.childName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300 text-emerald-950"
                     placeholder="Enter child's name"
                   />
                 </div>
@@ -674,6 +674,7 @@ const HassanQuranInstitute = () => {
               </div>
 
               <button
+                onClick={handleSubmit}
                 href="https://wa.me/923294546498"
                 className="w-full bg-gradient-to-r from-emerald-600 via-green-500 to-blue-600 text-white py-4 rounded-xl font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1 group"
               >
@@ -752,28 +753,36 @@ const HassanQuranInstitute = () => {
               </div>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold mb-6 text-emerald-400">
-                Contact Us
-              </h4>
-              <div className="space-y-3 text-gray-400">
-                <div className="flex items-center space-x-2">
-                  <Phone className="w-5 h-5 text-emerald-400" />
-                  <span>+92 329 4546498</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-5 h-5 text-emerald-400" />
-                  <span href="mailto:alihassanakram.dev@gmail.com">
-                    alihassanakram.dev@gmail.com
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <MessageCircle className="w-5 h-5 text-emerald-400" />
-                  <span href="https://wa.me/923294546498">
-                    Available on WhatsApp
-                  </span>
-                </div>
-              </div>
+            <div className="flex items-center space-x-2">
+              <Phone className="w-5 h-5 text-emerald-400" />
+              <a
+                href="tel:+923294546498"
+                className="text-white hover:underline"
+              >
+                +92 329 4546498
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <Mail className="w-5 h-5 text-emerald-400" />
+              <a
+                href="mailto:alihassanakram.dev@gmail.com"
+                className="text-white hover:underline"
+              >
+                alihassanakram.dev@gmail.com
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <MessageCircle className="w-5 h-5 text-emerald-400" />
+              <a
+                href="https://wa.me/923294546498"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:underline"
+              >
+                Available on WhatsApp
+              </a>
             </div>
           </div>
 
