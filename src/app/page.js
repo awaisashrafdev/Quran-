@@ -262,6 +262,7 @@ const HassanQuranInstitute = () => {
                 showNotification("Free trial booking form opened!")
               }
               className="group bg-gradient-to-r from-emerald-600 via-green-500 to-blue-600 text-white px-10 py-4 rounded-xl font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1"
+              href="https://wa.me/923294546498"
             >
               <span className="flex items-center space-x-2">
                 <Play className="w-5 h-5 group-hover:animate-pulse" />
@@ -462,7 +463,10 @@ const HassanQuranInstitute = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div
+            className="grid md:grid-cols-3 gap-8"
+            href="https://wa.me/923294546498"
+          >
             {packages.map((pkg, index) => (
               <div
                 key={pkg.id}
@@ -473,14 +477,20 @@ const HassanQuranInstitute = () => {
                 }`}
               >
                 {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div
+                    className="absolute -top-4 left-1/2 transform -translate-x-1/2"
+                    href="https://wa.me/923294546498"
+                  >
                     <div className="bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold animate-pulse">
                       🌟 Most Popular
                     </div>
                   </div>
                 )}
 
-                <div className="text-center mb-8">
+                <div
+                  className="text-center mb-8"
+                  href="https://wa.me/923294546498"
+                >
                   <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-emerald-600 transition-colors">
                     {pkg.name}
                   </h3>
@@ -669,7 +679,9 @@ const HassanQuranInstitute = () => {
               >
                 <span className="flex items-center justify-center space-x-2">
                   <Calendar className="w-5 h-5 group-hover:animate-pulse" />
-                  <span>Book Free Trial Class</span>
+                  <span href="https://wa.me/923294546498">
+                    Book Free Trial Class
+                  </span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
