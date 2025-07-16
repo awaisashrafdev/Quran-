@@ -516,6 +516,7 @@ const HassanQuranInstitute = () => {
 
                 <button
                   onClick={() => {
+                    href = "https://wa.me/923294546498";
                     setSelectedPackage(pkg);
                     showNotification(`${pkg.name} package selected!`);
                   }}
@@ -607,7 +608,7 @@ const HassanQuranInstitute = () => {
                     name="parentName"
                     value={formData.parentName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300 text-emerald-900"
                     placeholder="Enter parent's name"
                   />
                 </div>
@@ -636,7 +637,7 @@ const HassanQuranInstitute = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300 text-emerald-950"
                     placeholder="Enter email address"
                   />
                 </div>
@@ -652,7 +653,7 @@ const HassanQuranInstitute = () => {
                     name="whatsapp"
                     value={formData.whatsapp}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300 text-emerald-950"
                     placeholder="Enter WhatsApp number"
                   />
                 </div>
@@ -667,13 +668,12 @@ const HassanQuranInstitute = () => {
                   name="details"
                   value={formData.details}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all hover:border-emerald-300 text-emerald-950"
                   placeholder="Tell us about your child's age and current Quran reading level..."
                 ></textarea>
               </div>
 
               <button
-                onClick={handleSubmit}
                 href="https://wa.me/923294546498"
                 className="w-full bg-gradient-to-r from-emerald-600 via-green-500 to-blue-600 text-white py-4 rounded-xl font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1 group"
               >
